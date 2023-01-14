@@ -27,6 +27,7 @@ li{
 /* ----------------
 common style sets
 ------------------ */
+
 .container{
     width: 100%;
     box-sizing: border-box;
@@ -103,3 +104,23 @@ img{
     height: auto;
 }
 
+/* -------------------------
+Footer Section Styling
+-------------------------- */
+footer{
+    width: 100%;
+    margin: 0 auto;
+}
+.footer{
+    margin: 130px auto 216px;
+    width: 65%;
+    background-color: var(--bg-color-primary);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer>p{
+    margin: 39px 110px;
+    font-size: 14px;
+}
