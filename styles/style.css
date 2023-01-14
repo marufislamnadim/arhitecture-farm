@@ -16,6 +16,7 @@ Declaring golbal parameters
     --button-color: #FF900E;
     --primary-title-color:#131313;
     --seceondary-title-color:#424242;
+    --dark-3:#727272;
     --white-color: #FFFFFF;
 }
 a{
@@ -82,12 +83,12 @@ Banner Section Styling
     margin: 100px auto 33px;
     text-align: center;
 }
-.banner-info>.banner-title{
+.banner-info .banner-title{
     font-weight: 700;
     font-size: 64px;
     line-height: 75px;
 }
-.banner-info>.banner-description{
+.banner-info .banner-description{
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
@@ -112,7 +113,66 @@ img{
 /* -------------------------
    some-facts section styling
 -------------------------- */
-
+.some-facts{
+    width: 80%;
+    margin: 130px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 100px;
+}
+.facts-about{
+    width: 542px;
+}
+.section-fact-title{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    color: var(--primary-title-color);
+}
+.section-fact-description{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 20px 0;
+    color: var(--seceondary-title-color);
+}
+.facts-info{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.fact-defult{
+    width: 241px;
+    height: 241px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    border: 1px solid var(--button-color);
+    transition: 1s ease-in-out;
+}
+.fact-defult:hover{
+    transform: scale(1.05) rotate(360deg);
+    border: 5px solid cadetblue;
+}
+.fact-defult>img{
+    width: 46px;
+    height: 46px;
+    margin-bottom: 10px;
+}
+.fact-defult>.fact-count{
+    font-size: 45px;
+    font-weight: 600;
+}
+.fact-defult>.fact-title{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--dark-3);
+}
 /* -------------------------
 Sponsor Section Styling
 -------------------------- */
