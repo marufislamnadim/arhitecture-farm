@@ -1,4 +1,105 @@
+/* ---------------------------------------
+Importing relevent google font "work sans"
+----------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* -------------------------
+Declaring golbal parameters
+--------------------------- */
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Work Sans', sans-serif;
 }
+:root{
+    --bg-color-primary:rgba(255, 144, 14, 0.1);
+    --button-color: #FF900E;
+    --primary-title-color:#131313;
+    --seceondary-title-color:#424242;
+    --white-color: #FFFFFF;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/* ----------------
+common style sets
+------------------ */
+.container{
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+/* -------------------------
+Navigation Menu Styling
+-------------------------- */
+.header{
+    width: 100%;
+    background-color: var(--bg-color-primary);
+    margin: 0 auto;
+}
+nav{
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav>.logo>h2>a{
+    color: var(--primary-title-color);
+    font-weight: 700;
+    font-size: 45px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+}
+.menu>ul>li>a{
+    color: var(--seceondary-title-color);
+    font-weight: 500;
+    font-size: 18px;
+}
+/* -------------------------
+Banner Section Styling
+-------------------------- */
+.banner{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.banner-info{
+    width: 862px;
+    margin: 100px auto 33px;
+    text-align: center;
+}
+.banner-info>.banner-title{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+}
+.banner-info>.banner-description{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 20px;
+}
+button{
+    width: 180px;
+    height: 64px;
+    background-color: var(--button-color);
+    color: var(--white-color);
+    border-radius: 8px;
+    font-size: 20px;
+    border: none;
+}
+img{
+    margin: 50px 0px;
+    width: 95%;
+    height: auto;
+}
+
