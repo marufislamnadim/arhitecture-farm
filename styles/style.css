@@ -53,6 +53,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    /* gap: 15em; */
 }
 nav>.logo>h2>a{
     color: var(--primary-title-color);
@@ -109,6 +110,60 @@ img{
     width: 95%;
     height: auto;
 }
+/* -------------------------------------------
+   quick list features summary section styling
+-------------------------------------------- */
+.all-features-section{
+    margin: 85px auto;
+    width: 72%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.galary{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1em;
+    row-gap: 1em;
+}
+.galary>img{
+    width: 340px;
+    height: 340px;
+    margin: 0;
+}
+.features-summary{
+    display: flex;
+    justify-content: center;
+    gap: 2.5em;
+    text-align: left;
+}
+.summary{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.summary > .section-title{
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 53px;
+}
+.summary > .section-title > .first-span{
+    color: var(--seceondary-title-color);
+}
+.summary > .section-title > .second-span{
+    color: var(--button-color);
+}
+.summary > .section-description{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 24px 0px 32px;
+}
+/* -------------------------------------------
+   features details section styling 
+   -------------------------------------- */
+
 
 /* -------------------------
    some-facts section styling
@@ -158,6 +213,8 @@ img{
 .fact-defult:hover{
     transform: scale(1.05) rotate(360deg);
     border: 5px solid cadetblue;
+    background-image: linear-gradient(to right, gray, white);
+    color: white;
 }
 .fact-defult>img{
     width: 46px;
