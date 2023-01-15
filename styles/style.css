@@ -118,7 +118,7 @@ img{
 -------------------------------------------- */
 .all-features-section{
     margin: 85px auto;
-    width: 85%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -169,7 +169,7 @@ img{
    features details section styling 
    -------------------------------------- */
 .features-details{
-    max-width: 100%;
+    width: 100%;
     display: flex;
     gap: 2.5em;
     justify-content: flex-start;
@@ -227,7 +227,7 @@ img{
 }
 .featured-img>img{
     z-index: -99;
-    max-width: 536px;
+    width: 100%;
     height: 1004px;
 }
 .featured-img>.featured-btn{
@@ -354,8 +354,17 @@ Sponsor Section Styling
     filter: grayscale(100%);
 }
 
-/* contact-us section  */
+/* ---- ------------------
+----- contact-us section  
+--------------------------*/
 
+.contact-section>h2{
+    text-align: center;
+    font-size: 45px;
+}
+.contact-section>h2>span{
+    color: var(--button-color);
+}
 .contact-us{
     display: flex;
     justify-content: center;
@@ -386,11 +395,19 @@ Sponsor Section Styling
     font-size: 20px;
     line-height: 30px;
     margin: 5px 0;
+    font-weight: 700;
+    color: lightseagreen;
 }
-.write-us>form>input{
+.write-us>form>input, textarea{
     font-size: 16px;
     line-height: 24px;
+    border-radius: 8px;
+    padding: 10px 10px;
+    color: rgb(32, 3, 60);
 }
+/* .write-us>form>textarea{
+
+} */
 .btn-send{
     margin-top: 10px;
     width: 80px;
