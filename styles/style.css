@@ -177,6 +177,7 @@ img{
     width: 100%;
     display: flex;
     gap: 2.5em;
+    flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
 
@@ -477,6 +478,7 @@ footer{
     /* ------------------------
     -----Facts Section --------
     ---------------------- */
+    /* facts first section */
     .facts-about{
         width: 90%;
         text-align: right;
@@ -511,6 +513,78 @@ footer{
         width: 300px;
         height: 300px;
         margin: 0;
+    }
+    /* facts 2nd section */
+    .features-details{
+        width: 100%;
+        display: flex;
+        gap: 0.1em;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center; 
+    }
+    /* .features-descriptions{
+        width: 120% !important;
+    } */
+    .features-description-title>h2{
+        width: 140% !important;
+        /* border-left: 5px solid var(--button-color); */
+        font-weight: 400;
+        font-size: 20px;
+        padding-left: 5px;
+        margin: 20px 0 1px;
+    }
+    .features-description-breif{
+        width: 140% !important;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 30px;
+    }
+    .features-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        
+    }
+    .feature-default{
+        margin: 5px;
+        width: 300px;
+        height: 150px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 25px;
+        border-radius: 8px;
+    
+    }
+    .feature-default>h4{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .feature-default>p{
+        font-size: 14px;
+        line-height: 22px;
+        margin-right: 0px;
+    }
+    .featured-img>img{
+        width: 100%;
+        height: 400px !important; 
+    }
+    .featured-img>.featured-btn{
+        width: 140px;
+        height: 80px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 20px;
+    }
+    .featured-img>.featured-btn>span{
+        font-size: 16px;
     }
     /* -----------------------
     Sponsor Info -------------
