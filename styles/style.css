@@ -41,7 +41,9 @@ common style sets
     width: 100%;
     margin: 0 auto;
 }
-
+.hide{
+    display: none;
+}
 /* -------------------------
 Navigation Menu Styling
 -------------------------- */
@@ -56,7 +58,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    /* gap: 15em; */
+    gap: 15em;
 }
 nav>.logo>h2>a{
     color: var(--primary-title-color);
@@ -405,9 +407,7 @@ Sponsor Section Styling
     padding: 10px 10px;
     color: rgb(32, 3, 60);
 }
-/* .write-us>form>textarea{
 
-} */
 .btn-send{
     margin-top: 10px;
     width: 80px;
@@ -432,4 +432,55 @@ footer{
 .footer>p{
     margin: 39px 110px;
     font-size: 14px;
+}
+
+/* --------------------------------------
+########### Media Query Section #########
+--------------------------------------- */
+@media screen and (max-width:576px) {
+    /* -------------------------
+        Navigation Menu and Banner 
+        -------------------------- */
+    nav{
+        gap:1.5em;
+        padding: 20px 0;
+    }
+    .banner-info{
+        width: 90%;
+        margin: 20px auto 10px;
+    }
+    .banner-info .banner-title{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .banner-info .banner-description{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        margin: 15px 0px;
+    }
+    button{
+        width: 120px;
+        height: 44px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    img{
+        margin: 30px 0px;
+        width: 100%;
+    }
+    /* -------------------------
+        Footer Menu and Banner 
+    -------------------------- */
+    .footer{
+        margin: 40px auto;
+        width: 90%;
+        border-radius: 8px;
+    }
+    .footer>p{
+        margin: 10px;
+        font-size: 10px;
+    }
+    
 }
