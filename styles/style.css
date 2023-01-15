@@ -25,6 +25,9 @@ a{
 li{
     list-style: none;
 }
+input, label{
+    display: block;
+}
 /* ----------------
 common style sets
 ------------------ */
@@ -115,7 +118,7 @@ img{
 -------------------------------------------- */
 .all-features-section{
     margin: 85px auto;
-    width: 80%;
+    width: 85%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -351,6 +354,48 @@ Sponsor Section Styling
     filter: grayscale(100%);
 }
 
+/* contact-us section  */
+
+.contact-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+    margin: 50px auto;
+    text-align: center;
+}
+.contact-default{
+    height: 500px;
+    padding-right: 10px;
+}
+.working-hours>h4{
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+.working-hours>p{
+    line-height: 30px;
+}
+.write-us>form{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+}
+.write-us>form>label{
+    font-size: 20px;
+    line-height: 30px;
+    margin: 5px 0;
+}
+.write-us>form>input{
+    font-size: 16px;
+    line-height: 24px;
+}
+.btn-send{
+    margin-top: 10px;
+    width: 80px;
+    height: 40px;
+}
 /* -------------------------
 Footer Section Styling
 -------------------------- */
